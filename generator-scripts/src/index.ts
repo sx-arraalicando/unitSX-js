@@ -22,11 +22,11 @@ const unitsJs = `
 
 console.info(unitsJs);
 
-const unitsDocumentationDefinitionsDirectory = '..';
-const unitsTestinationDirectory = '../src'
+//const unitsDocumentationDefinitionsDirectory = '..';
+//const unitsTestinationDirectory = '../src'
 
 // Fetch the latest units definitions from the unitsnet repo
-const unitsDefinitions: UnitTypeDefinition[] = fetchUnitsDefinitions('angularsen/UnitsNet');
+//const unitsDefinitions: UnitTypeDefinition[] = fetchUnitsDefinitions('angularsen/UnitsNet');
 
 console.info(`Generating Units ...`);
 
@@ -35,16 +35,16 @@ const project = new Project({
 });
 
 // Generate the units classes
-generateUnitsFromUnitsDefinitions(project, unitsTestinationDirectory, unitsDefinitions);
+//generateUnitsFromUnitsDefinitions(project, unitsTestinationDirectory, unitsDefinitions);
 
-console.info(`Generating Units Export Module ...`);
+//console.info(`Generating Units Export Module ...`);
 
 // Generate the module exports file
-generateUnitsModuleExport(project, unitsTestinationDirectory, unitsDefinitions);
+//generateUnitsModuleExport(project, unitsTestinationDirectory, unitsDefinitions);
 
-console.info(`Generating Units Documentation file ...`);
+//console.info(`Generating Units Documentation file ...`);
 
-generateDocumentation(unitsDocumentationDefinitionsDirectory, unitsDefinitions)
+//generateDocumentation(unitsDocumentationDefinitionsDirectory, unitsDefinitions)
 
 const success = `
 _______ _     _ _______ _______ _______ _______ _______
